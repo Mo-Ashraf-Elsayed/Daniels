@@ -1,0 +1,749 @@
+:root {
+  --main-color: #1c1c1c;
+  --section-bg: #f7f7f7;
+  --main-font: "Poppins", serif;
+  --second-font: "Montserrat", serif;
+}
+body {
+  font-family: var(--main-font);
+}
+h2.bgDot {
+  width: fit-content;
+  margin: 3rem auto 1rem;
+  font-weight: bold;
+  font-size: 2.8rem;
+  padding: 0.6rem 0;
+  position: relative;
+}
+h2.bgDot span {
+  position: relative;
+  z-index: 1;
+}
+h2.bgDot::after {
+  content: "";
+  height: 50%;
+  width: 100%;
+  background-image: url(../imgs/dots.png);
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+@media screen and (max-width: 350px) {
+  h2.bgDot {
+    font-size: 2rem;
+  }
+}
+nav .container-md a.navbar-brand {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.nav-link {
+  width: fit-content !important;
+  color: var(--main-color);
+  padding: 0 !important;
+  margin: 0 0.9rem !important;
+  font-size: 0.87rem;
+  font-weight: 400;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s !important;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+.nav-link:hover {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  nav .borderTop {
+    padding-top: 0.5rem;
+    border-top: 1px solid rgb(200, 200, 200);
+  }
+  nav .nav-link {
+    margin: 0.5rem auto !important;
+  }
+}
+/* Home */
+#home {
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center;
+  font-family: var(--second-font);
+}
+#home .layer .container-md .animation::after {
+  content: "|";
+  font-weight: 300;
+  animation: write 8s ease-out infinite;
+}
+/* Change Jobs On Home */
+@keyframes write {
+  0% {
+    content: "Larry Daniels|";
+  }
+  1% {
+    content: "Larry Daniels|";
+  }
+  2% {
+    content: "Larry Daniels|";
+  }
+  3% {
+    content: "Larry Daniels|";
+  }
+  4% {
+    content: "Larry Daniels|";
+  }
+  5% {
+    content: "Larry Daniels|";
+  }
+  6% {
+    content: "Larry Daniels|";
+  }
+  7% {
+    content: "Larry Daniels|";
+  }
+  8% {
+    content: "Larry Daniels|";
+  }
+  9% {
+    content: "Larry Daniels|";
+  }
+  10% {
+    content: "Larry Daniels|";
+  }
+  11% {
+    content: "Larry Daniels|";
+  }
+  12% {
+    content: "Larry Daniels|";
+  }
+  14% {
+    content: "Larry Daniel|";
+  }
+  16% {
+    content: "Larry Danie|";
+  }
+  18% {
+    content: "Larry Dani|";
+  }
+  20% {
+    content: "Larry Dan|";
+  }
+  22% {
+    content: "Larry Da|";
+  }
+  24% {
+    content: "Larry D|";
+  }
+  26% {
+    content: "Larry |";
+  }
+  28% {
+    content: "Larry|";
+  }
+  30% {
+    content: "Larr|";
+  }
+  32% {
+    content: "Lar|";
+  }
+  34% {
+    content: "La|";
+  }
+  36% {
+    content: "L|";
+  }
+  38% {
+    content: "|";
+  }
+  39% {
+    content: "D| ";
+  }
+  40% {
+    content: "De|";
+  }
+  41% {
+    content: "De| ";
+  }
+  42% {
+    content: "Dev| ";
+  }
+  43% {
+    content: "Deve| ";
+  }
+  44% {
+    content: "Devel| ";
+  }
+  45% {
+    content: "Develo| ";
+  }
+  46% {
+    content: "Develop| ";
+  }
+  47% {
+    content: "Develope| ";
+  }
+  48% {
+    content: "Developer| ";
+  }
+  49% {
+    content: "Developer| ";
+  }
+  50% {
+    content: "Developer| ";
+  }
+  51% {
+    content: "Developer| ";
+  }
+  52% {
+    content: "Developer| ";
+  }
+  53% {
+    content: "Developer| ";
+  }
+  54% {
+    content: "Developer| ";
+  }
+  55% {
+    content: "Developer| ";
+  }
+  56% {
+    content: "Developer| ";
+  }
+  57% {
+    content: "Developer| ";
+  }
+  58% {
+    content: "Developer| ";
+  }
+  59% {
+    content: "Developer| ";
+  }
+  60% {
+    content: "Developer| ";
+  }
+  61% {
+    content: "Developer| ";
+  }
+  62% {
+    content: "Develope| ";
+  }
+  63% {
+    content: "Develop| ";
+  }
+  64% {
+    content: "Develo| ";
+  }
+  65% {
+    content: "Devel| ";
+  }
+  66% {
+    content: "Deve| ";
+  }
+  67% {
+    content: "Dev| ";
+  }
+  68% {
+    content: "De| ";
+  }
+  69% {
+    content: "D| ";
+  }
+  70% {
+    content: "| ";
+  }
+  71% {
+    content: "D| ";
+  }
+  72% {
+    content: "De| ";
+  }
+  73% {
+    content: "Des| ";
+  }
+  74% {
+    content: "Desi| ";
+  }
+  75% {
+    content: "Desig| ";
+  }
+  76% {
+    content: "Design| ";
+  }
+  77% {
+    content: "Designe| ";
+  }
+  78% {
+    content: "Designer| ";
+  }
+  79% {
+    content: "Designer| ";
+  }
+  80% {
+    content: "Designer| ";
+  }
+  81% {
+    content: "Designer| ";
+  }
+  82% {
+    content: "Designer| ";
+  }
+  83% {
+    content: "Designer| ";
+  }
+  84% {
+    content: "Designer| ";
+  }
+  85% {
+    content: "Designer| ";
+  }
+  86% {
+    content: "Designer| ";
+  }
+  87% {
+    content: "Designer| ";
+  }
+  88% {
+    content: "Designer| ";
+  }
+  89% {
+    content: "Designer| ";
+  }
+  90% {
+    content: "Designer| ";
+  }
+  91% {
+    content: "Designer| ";
+  }
+  92% {
+    content: "Designer| ";
+  }
+  93% {
+    content: "Designe| ";
+  }
+  94% {
+    content: "Design| ";
+  }
+  95% {
+    content: "Desig| ";
+  }
+  96% {
+    content: "Desi| ";
+  }
+  97% {
+    content: "Des| ";
+  }
+  98% {
+    content: "De| ";
+  }
+  99% {
+    content: "D| ";
+  }
+  100% {
+    content: "| ";
+  }
+}
+#home .layer .container-md .icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #1c1c1c76;
+  color: white;
+}
+/* About */
+#about .aboutPhoto::after {
+  content: "";
+  width: 75%;
+  height: 75%;
+  background-image: url(../imgs/dots.png);
+  background-position: left bottom;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+#about .aboutContent h2 {
+  font-family: var(--second-font);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+#about .aboutContent .letterSpace {
+  color: gray;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.progress {
+  background-color: white;
+  margin: 2.1rem 0;
+  box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 1.5rem;
+  font-family: var(--second-font);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.progress-bar {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.btn-primary {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  font-size: 0.8rem;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.8s;
+}
+.btn-primary:hover {
+  background-color: white;
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.btn-outline-primary {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  font-size: 0.8rem;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.8s;
+}
+.btn-outline-primary:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: white;
+}
+/* Services */
+#services {
+  background-color: var(--section-bg) !important;
+}
+#services .cardsOne .icon {
+  width: 75px;
+  height: 75px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  margin: auto auto 1.5rem;
+  background-color: var(--section-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  transition: all 0.5s;
+}
+#services .cardsOne:hover .icon {
+  background-color: var(--main-color);
+  color: var(--section-bg);
+}
+#services .cardsOne .paragraph {
+  color: gray;
+  font-size: 0.9rem;
+  word-spacing: 2px;
+}
+.nav-pills .nav-link,
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: white;
+}
+
+.nav-pills .nav-link {
+  padding-bottom: 0.5rem !important;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+/* Portfolio*/
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo
+  > .layerCardsTwo {
+  padding: 0.5rem;
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo:hover
+  > .layerCardsTwo {
+  opacity: 1;
+  top: 0;
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo
+  .layerCardsTwo
+  .contentCardsTwo {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo
+  .layerCardsTwo
+  .contentCardsTwo
+  p {
+  font-family: var(--second-font);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform: translateY(-30px);
+  transition: all 0.5s;
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo:hover
+  .layerCardsTwo
+  .contentCardsTwo
+  p {
+  transform: translateY(0);
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo
+  .layerCardsTwo
+  .contentCardsTwo
+  .btnsCardsTwo
+  button {
+  width: 30px;
+  height: 30px;
+  font-size: 0.8rem;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  border: none;
+}
+#portfolio
+  .container-md
+  #pills-tabContent
+  .tab-pane
+  .row
+  .col-md-6
+  .cardsTwo
+  .layerCardsTwo
+  .contentCardsTwo
+  .btnsCardsTwo
+  button:hover {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+/* Responsive Modal */
+.modal-dialog {
+  max-width: 40%;
+  margin: 5rem auto;
+}
+@media screen and (max-width: 1200px) {
+  .modal-dialog {
+    max-width: 60%;
+    margin: 6rem auto 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+    max-width: 90%;
+    margin: 6rem auto 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 7rem auto 0;
+  }
+}
+/* Clients */
+#clients .carouselPage {
+  background-color: var(--section-bg);
+}
+#clients .carouselPage .clientPhoto {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+#clients .carouselPage p {
+  width: 75%;
+  margin: 1rem auto 2rem;
+  color: gray;
+  font-size: 0.9rem;
+  word-spacing: 2px;
+}
+#clients .carouselPage .clientName {
+  font-family: var(--second-font);
+  font-size: 1rem;
+}
+#clients .carouselPage .boughtFrom {
+  font-size: 0.8rem;
+  color: gray;
+}
+#clients .carouselPage .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c9c9c9;
+}
+#clients .carouselPage .carousel-indicators button.active,
+#clients .carouselPage .carousel-indicators button:hover {
+  background-color: #869791;
+  opacity: 1;
+  transition: all 0s;
+}
+/* Team */
+#team {
+  background-color: var(--section-bg);
+}
+#team .devCard .devPhoto img {
+  transition: all 0.5s;
+  width: 100%;
+}
+#team .devCard .devPhoto:hover img {
+  transform: scale(1.2);
+}
+#team .devCard .devPhoto .layerDevIcons {
+  transform: rotateY(180deg) scale(0.5);
+  opacity: 0;
+  transition: all 0.5s;
+  height: 100%;
+  padding: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#team .devCard:hover .devPhoto .layerDevIcons {
+  transform: rotateY(0) scale(1);
+  opacity: 1;
+}
+#team .devCard .devPhoto .layerDevIcons .devIcons {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team .devCard .devPhoto .layerDevIcons .devIcons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  background-color: var(--main-color);
+  color: white;
+}
+#team .devCard .devPhoto .layerDevIcons .devIcons a:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background-color: white;
+}
+#team .devCard .devidentity {
+  padding: 1.5rem 1rem;
+  border-radius: 0 0 5px 5px;
+  background-color: #5b5b5b;
+  word-spacing: 2px;
+  font-family: var(--second-font);
+}
+/* Contact */
+#contact .howToContact .contactInner .iconContact {
+  width: 70px;
+  margin: auto;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.5rem;
+  background-color: var(--section-bg);
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+#contact .howToContact .contactInner:hover .iconContact {
+  color: white;
+  background-color: var(--main-color);
+}
+#contact .howToContact .contactInner .wordBreak {
+  word-break: break-all;
+}
+#contact .form div input[type="text"],
+#contact .form div input[type="email"],
+#contact .form div textarea {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--section-bg);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  resize: both;
+}
+#contact .form div input[type="submit"] {
+  background-color: #1c1c1c;
+  padding: 0.6rem 2.5rem;
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  transition: all 0.5s;
+}
+#contact .form div input[type="submit"]:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+/* Footer */
+footer {
+  background-color: var(--main-color);
+  padding: 2.5rem 0;
+}
+footer p {
+  color: #869791;
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
